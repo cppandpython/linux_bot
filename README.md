@@ -13,7 +13,7 @@
 
 <br>
 
-Bot — Provides full remote access to the system
+Bot — Provide full remote access to the system
 
 <br>
 
