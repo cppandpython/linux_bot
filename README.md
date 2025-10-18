@@ -1,9 +1,47 @@
 # There will be a huge update
 <br><br>
 
+
+
 # 🌟 Linux Bot
 
-<br><br>
+<br<br>
+
+
+## en
+
+<br>
+
+Bot — Provides full remote access to the system
+
+<br>
+
+## 🚀 Possibilities
+
+- ✅ Ease of use
+- ⚙️ Extensive functionality
+- 📦 Automatically installs all necessary libraries
+
+<br>
+
+## 🧰 Installation
+
+``` bash
+# Clone the repository
+git clone https://github.com/cppandpython/Linux-Bot.git
+
+# Edit in bot.py
+TOKEN = 'YOUR TELEGRAM BOT TOKEN'
+PATH = 'YOUR BOT PATH'
+PASSWORD = 'YOUR PASSWORD'
+
+# Launch
+python bot.py
+```
+
+
+<br><br><br>
+
 
 ## ru
 
