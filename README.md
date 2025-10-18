@@ -121,7 +121,7 @@ Bot — Provide full remote access to the system
 
 ``` bash
 # Clone the repository
-git clone https://github.com/cppandpython/Linux-Bot.git
+git clone https://github.com/cppandpython/linux_bot.git
 
 # Edit in bot.py
 TOKEN = 'YOUR TELEGRAM BOT TOKEN'
@@ -156,7 +156,7 @@ bot — Обеспечивает полный удаленный доступ к
 
 ```bash
 # Клонируй репозиторий
-git clone https://github.com/cppandpython/Linux-Bot.git
+git clone https://github.com/cppandpython/linux_bot.git
 
 # Изменить в bot.py
 TOKEN = 'ВАШ ТЕЛЕГРАМ ТОКЕН БОТА'
