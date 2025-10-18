@@ -7,6 +7,8 @@
 
 
 <br><br>
+
+
 Core Commands
 =============
 
@@ -92,6 +94,8 @@ User Interface Commands
     keyboard                  Keyboard control                                                                                                                                         
     keylogger                 Control collected keylogger data
     show                      Display message
+
+    
 <br><br>
 
 
