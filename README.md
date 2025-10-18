@@ -21,7 +21,7 @@ Bot — Provide full remote access to the system
 
 - ✅ Ease of use
 - ⚙️ Extensive functionality
-- 📦 Automatically installs all necessary libraries
+- 📦 Automatically install all necessary libraries
 
 <br>
 
