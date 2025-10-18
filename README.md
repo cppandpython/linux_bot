@@ -5,6 +5,7 @@
 
 # 🌟 Linux Bot
 
+
 <br><br>
 
 
@@ -16,7 +17,7 @@ Bot — Provides full remote access to the system
 
 <br>
 
-## 🚀 Possibilities
+## 🚀 Features
 
 - ✅ Ease of use
 - ⚙️ Extensive functionality
@@ -51,7 +52,7 @@ bot — Обеспечивает полный удаленный доступ к
 
 <br>
 
-## 🚀 Возможности
+## 🚀 Функции
 
 - ✅ Простота использования
 - ⚙️ Большая функциональность
