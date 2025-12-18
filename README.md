@@ -100,7 +100,7 @@ User Interface Commands
 
 <br>
 
-Bot — Provide full remote access to the system
+linux_bot — Provide full remote access to the system
 
 <br>
 
@@ -135,7 +135,7 @@ python bot.py
 
 <br>
 
-bot — Обеспечивает полный удаленный доступ к системе
+linux_bot — Обеспечивает полный удаленный доступ к системе
 
 <br>
 
