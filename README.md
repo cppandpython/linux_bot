@@ -1,6 +1,6 @@
 # 🌟 Linux Bot
 
-AS SOON AS HUGE UPDATE
+## AS SOON AS HUGE UPDATE
 
 <br><br>
 
