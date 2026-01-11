@@ -127,15 +127,21 @@ linux_bot — Provide full remote access to the system
 git clone https://github.com/cppandpython/windows_bot.git
 
 # Change consts ​​in bot.py
+#-------------------------|NECESSARILY|-------------------------#
 TOKEN = TELEGRAM BOT TOKEN
 PASSWORD = PASSWORD FOR SESSION WITH TELEGRAM BOT
 SEED = ACCEPTABLE VALUE TYPE int # RESPONSIBLE FOR ENCRYPTION INITIAL VALUES  
 PATH = PATH TO SAVE TELEGRAM BOT
+#-----------------------------|END|-----------------------------#
 
+
+
+#-------------------------|OPTIONAL|-------------------------#
 BOT_FILE_NAME = HOW TO SAVE TELEGRAM BOT NAME IN PATH
-BOT_TASK_NAME = TASK NAME IN SCHEDULE FOR TELEGRAM BOT # NECESSARY IF BOT_EXE IS True
-BOT_TASK_DESCRIPTION = TASK DESCRIPTION IN SCHEDULE FOR TELEGRAM BOT # NECESSARY IF BOT_EXE IS True
+BOT_SERVICE_NAME = SERVICE NAME IN SYSTEMCTL FOR TELEGRAM BOT # NECESSARY IF BOT_EXE IS True
+BOT_SERVICE_DESCRIPTION = SERVICE DESCRIPTION IN SYSTEMCTL FOR TELEGRAM BOT # NECESSARY IF BOT_EXE IS True
 BOT_EXE = TELEGRAM BOT WILL BE LAUNCHED IN (EXE IF BOT_EXE == True ELSE PYTHON) MODE
+#----------------------------|END|---------------------------#
 
 # Launch
 python bot.py
@@ -174,8 +180,8 @@ SEED = ДОПУСТИМОЕ ЗНАЧЕНИЕ ШИФРОВАНИЯ TELEGRAM-БО�
 PATH = ПУТЬ ДЛЯ СОХРАНЕНИЯ TELEGRAM-БОТА
 
 BOT_FILE_NAME = ИМЯ ФАЙЛА TELEGRAM-БОТА ДЛЯ СОХРАНЕНИЯ В PATH
-BOT_TASK_NAME = ИМЯ ЗАДАЧИ В ПЛАНИРОВЩИКЕ ДЛЯ TELEGRAM-БОТА # НЕОБХОДИМО ЕСЛИ BOT_EXE ЯВЛЯЕТСЯ True
-BOT_TASK_DESCRIPTION = ОПИСАНИЕ ЗАДАЧИ В ПЛАНИРОВЩИКЕ ДЛЯ TELEGRAM-БОТА # НЕОБХОДИМО ЕСЛИ BOT_EXE ЯВЛЯЕТСЯ True
+BOT_SERVICE_NAME = ИМЯ СЕРВИСА В SYSTEMCTL ДЛЯ TELEGRAM-БОТА # НЕОБХОДИМО ЕСЛИ BOT_EXE ЯВЛЯЕТСЯ True
+BOT_SERVICE_DESCRIPTION = ОПИСАНИЕ СЕРВИСА В SYSTEMCTL ДЛЯ TELEGRAM-БОТА # НЕОБХОДИМО ЕСЛИ BOT_EXE ЯВЛЯЕТСЯ True
 BOT_EXE = TELEGRAM-БОТ БУДЕТ ЗАПУЩЕН В РЕЖИМЕ (EXE ЕСЛИ BOT_EXE == True ИНАЧЕ PYTHON)
 
 # Запуск
