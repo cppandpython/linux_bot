@@ -1778,7 +1778,7 @@ site -r  —  Unblock all sites
         case 'lshw':
             lshw = shell('lshw', output=True)
 
-            send(lshw, doc='lshw.txt') if lshw else send(NULL)
+            send(lshw, doc='lshw.txt') if lshw else send('lshw is not working [*]')
             return
         case 'modprobe':
             send('''
